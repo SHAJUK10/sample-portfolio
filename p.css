@@ -1,0 +1,236 @@
+/* header part */
+*{
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+.logo{
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 26px;
+}
+.header{
+    
+    display: flex;   /* to place element in same line */
+    justify-content: space-between;/* to align one item to left and one item to right*/
+    align-items: center;
+}
+.navlinks{
+    margin-right: 60px;
+    display: flex;
+    list-style-type: none;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+    
+    
+
+}
+.links:hover{
+    color: red;
+}
+
+/* home section */
+#home{  
+    margin-top: 100px;
+}
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.secondname{
+    color: orange;
+}
+.secondname:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+   
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.download:hover{
+    color: green;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s,left 1s;
+}
+.images:hover #shape{
+    bottom: 60px;
+}
+.images:hover #girl{
+    left:40%
+}
+
+/* about section */
+#about{
+    margin-top: 200px;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+}
+.heading h3{
+    color: green;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    gap:2rem;
+   
+}
+.information{
+
+    margin-top: 20px;
+
+}
+.info-box{
+    margin-top: 10px;
+}
+.info-box span{
+    margin-left: 5px;
+}
+.about-img img{
+    width:80%
+}
+.about-details{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#skills{
+    margin-top: 200px;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 2rem;
+}
+.progress-bar{
+    margin-left: 70px;
+    padding-left: 40px;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+
+.css-bar{
+    background-color: orange;
+    width: 86%;
+}
+.js-bar{
+    background-color: orange;
+    width: 92%;
+}
+.react-bar{
+    background-color: orange;
+    width: 95%;
+}
+.angular-bar{
+    background-color: orange;
+    width: 99%;
+}
+.skills-img img{
+    width: 66%;
+    padding: 20px;
+
+    
+}
+
+#Contact{
+    margin-top: 200px;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right ,yellow,red);
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+}
+.footer{
+    margin-top: 100px;
+    text-align: center;
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right ,yellow,red);
+    margin: 0px 10px 50px 0px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-content: center;
+    justify-content: center;
+}
+.up-arrow i{
+    margin-left: 12px;
+    margin-top: 5px;
+}
